@@ -1,0 +1,11 @@
+<ul>
+  <div *ngFor="let course of courseObservable$ | async">
+    <ngb-alert>
+      <h3><a href="{{course.url}}">{{course.description}}</a></h3>
+      <p>{{course.title}}</p>
+      <div>
+        <a href="{{course.url}}" class="btn btn-info" target="_blank">Go to Course</a>
+      </div>
+    </ngb-alert>
+  </div>
+</ul>
